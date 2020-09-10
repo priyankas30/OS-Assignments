@@ -1,0 +1,108 @@
+Assignmanet 1
+
+Q2
+A) Create three directory a b and c and create a.txt,b.txt and c.txt in each directory respectively and then copy c directory into the a.
+
+Ans: cp -r c a
+
+B)Move Directory b to c
+Ans: mv b c
+
+C)Create alias of ls -lh command to your name.
+Ans:  alias Priyanka="ls -lh"
+
+D) Change Directory name a to cdac.
+Ans:mv a cdac
+
+
+Q3. A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    file5.txt with some text inside it. Search for 's' character
+    inside all the files using grep command.
+Ans: grep 's\|' file3.txt
+
+ Also Use cat to view all file content together.
+Ans: cat  {file1.txt,file2.txt,file3.txt,file4.txt,file5.txt}
+shell is an Interpreter
+Priyanka shashikant suryavnshi
+Swtitzerland
+london
+india
+
+B)Create file.txt using cat and edit that using nano editor
+Ans:cat > demo.txt
+    nano
+
+C)Create 5 empty files using touch command
+touch {file1,file2,file3,file4,file5}
+
+D)Remove previously created directory a , b and c.
+rm -rf a b c
+
+Q4. Create a file with some content using vi editor
+Ans vi demo
+
+a) Display the file using cat command
+   Ans: cat demo
+
+b) Display line numbers along with content
+Ans  cat -n demo
+
+c) Display the file in reverse order using tac
+Ans:  tac demo
+
+d) Combine multiple files using cat command
+Ans: cat demo demo1
+
+Q5. Create Random some files and sub directories.
+Ans mkdir -p images/pictures 
+    cat > demo.txt
+    cat > demo2.txt
+) display files row wise, column wise, 1 per row
+
+b) sort the files in ascending, descending order
+Ans sort -n demo1.txt
+
+
+Create directory of your name and then create 4 files inside it named
+	a.txt, b.txt, c.txt and d.sh. And change the directory permission to
+	only user and also files permission to only user such that
+a)user can read and write the file a.txt and b.txt
+
+mkdir priyanka
+cd priyanka
+cat > a.txt
+cat > b.txt
+cat > c.txt
+
+a)user can read and write the file a.txt and b.txt
+chmod -x a.txt b.txt
+
+b)user can write the file c.txt
+chmod -rx c.txt
+
+Q2. Change the permission of the previous directory to executable only.
+Ans: chmod -rw priyanka
+
+Q3. Change the permission of the previous directory to read only.
+chmod a=r priyanka
+s
+Q4) Use echo to list the all files of your home directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
