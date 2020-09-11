@@ -1,0 +1,8 @@
+2. Write a menu based script to perform following string operations
+
+a) To find length of a string
+
+str="good night"
+length=`expr length "$str"`
+#length=${#str}
+echo "lenght is $length"
