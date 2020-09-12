@@ -227,20 +227,22 @@ drwxrwxrwx 1 priyanka priyanka 4096 Sep 11 21:02 dir9
 
 > #!/bin/bash
 
-	echo 'Enter the range till you want to calculate the Fibonaccci Series : '
-	read range
-	i=1
-	prev=0
-	newprev=0
-	while (( $i+$prev < $range ))
-	do
-		echo $(expr $prev + $i)
-		newprev=$prev
-		prev=$i
-		i=$(expr $newprev + $i)
-	done
-
-
+	echo "How many number of terms to be generated ?"
+  read n
+  x=0
+  y=1
+  i=2
+  echo "Fibonacci Series up to $n terms :"
+  echo "$x"
+  echo "$y"
+  while [ $i -lt $n ]
+  do
+      i=`expr $i + 1 `
+      z=`expr $x + $y `
+      echo "$z"
+      x=$y
+      y=$z
+  done
 8. Write a shell script to reverse the single strings. 
 
 > #!/bin/bash
