@@ -1,6 +1,10 @@
-Assignmanet 1
+										
+										
+								        Assignmanet 1
 
- Q1. Explore the following commands with various options, refer man pages for 
+ 
+ 
+  Q1. Explore the following commands with various options, refer man pages for 
     further help a) date b) cal c) bc d) echo e) who f) whoami g) logname g) uname h)
     seq i) clear
 
