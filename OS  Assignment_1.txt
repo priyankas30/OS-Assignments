@@ -1,0 +1,362 @@
+Assignmanet 1
+
+ Q1. Explore the following commands with various options, refer man pages for 
+    further help a) date b) cal c) bc d) echo e) who f) whoami g) logname g) uname h)
+    seq i) clear
+
+	DATE  
+
+  %a   locale's abbreviated weekday name (e.g., Sun)
+  %A   locale's full weekday name (e.g., Sunday)
+  %b   locale's abbreviated month name (e.g., Jan)
+  %B   locale's full month name (e.g., January)
+  %c   locale's date and time (e.g., Thu Mar  3 23:05:25 2005)
+  %C   century; like %Y, except omit last two digits (e.g., 20)
+  %d   day of month (e.g., 01)
+  %D   date; same as %m/%d/%y
+  %e   day of month, space padded; same as %_d
+  %F   full date; same as %Y-%m-%d
+  %g   last two digits of year of ISO week number (see %G)
+  %G   year of ISO week number (see %V); normally useful only with %V
+  %h   same as %b
+  %H   hour (00..23)
+  %I   hour (01..12)
+  %j   day of year (001..366)
+  %k   hour, space padded ( 0..23); same as %_H
+  %l   hour, space padded ( 1..12); same as %_I
+  %m   month (01..12)
+  %M   minute (00..59)
+  %n   a newline
+  %N   nanoseconds (000000000..999999999)
+  %p   locale's equivalent of either AM or PM; blank if not known
+  %P   like %p, but lower case
+  %q   quarter of year (1..4)
+  %r   locale's 12-hour clock time (e.g., 11:11:04 PM)
+  %R   24-hour hour and minute; same as %H:%M
+  %s   seconds since 1970-01-01 00:00:00 UTC
+  %S   second (00..60)
+  %t   a tab
+  %T   time; same as %H:%M:%S
+  %u   day of week (1..7); 1 is Monday
+  %U   week number of year, with Sunday as first day of week (00..53)
+  %V   ISO week number, with Monday as first day of week (01..53)
+  %w   day of week (0..6); 0 is Sunday
+  %W   week number of year, with Monday as first day of week (00..53)
+  %x   locale's date representation (e.g., 12/31/99)
+  %X   locale's time representation (e.g., 23:13:48)
+  %y   last two digits of year (00..99)
+  %Y   year
+  %z   +hhmm numeric time zone (e.g., -0400)
+  %:z  +hh:mm numeric time zone (e.g., -04:00)
+  %::z  +hh:mm:ss numeric time zone (e.g., -04:00:00)
+  %:::z  numeric time zone with : to necessary precision (e.g., -04, +05:30)
+  %Z   alphabetic time zone abbreviation (e.g., EDT)
+
+Q2
+A) Create three directory a b and c and create a.txt,b.txt and c.txt in each directory respectively and then copy c directory into the a.
+
+Ans:	priyanka@DESKTOP-E3TUKR3:/mnt/d/os$ mkdir Assign1/a/file1
+ 	priyanka@DESKTOP-E3TUKR3:/mnt/d/os$ mkdir Assign1/b/file2
+	priyanka@DESKTOP-E3TUKR3:/mnt/d/os$ mkdir Assign1/c/file3
+	priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cp -r c a
+
+B)Move Directory b to c
+Ans: mv b c
+
+C)Create alias of ls -lh command to your name.
+Ans:  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/a$ alias Priyanka="ls -lh"
+
+D) Change Directory name a to cdac.
+Ans:priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mv a cdac
+
+
+Q3. A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    file5.txt with some text inside it. Search for 's' character
+    inside all the files using grep command.
+
+Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ touch {file1.txt,file2.txt,file3.txt,file4.txt,file5.txt}
+	
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ grep s *.txt
+file1.txt:shimla
+file3.txt:sun
+file4.txt:sunday
+file5.txt:switzerland
+file5.txt:shivani
+
+Also Use cat to view all file content together.
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat file1.txt file2.txt file3.txt file4.txt file5.txt
+shimla
+manali
+cdac
+sun
+moon
+sunday
+monday
+switzerland
+shivani
+
+B)Create file.txt using cat and edit that using nano editor
+Ans:	priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat > file.txt
+	priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ nano
+	priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat file.txt
+	I love india
+	i am from mumbai
+
+C)Create 5 empty files using touch command
+Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ touch f1 f2 f3 f4 f5
+
+D)Remove previously created directory a , b and c.
+
+Ans : priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ rm -rf a b c
+
+Q4. Create a file with some content using vi editor
+Ans priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ vi demo.txt
+    priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat demo.txt
+	I am Priyanka
+	suryavanshi
+
+a) Display the file using cat command
+   Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat demo.txt
+	I am Priyanka
+	suryavanshi
+
+
+b) Display line numbers along with content
+
+Ans  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat -n file1.txt
+     1  shimla
+     2  manali
+
+
+c) Display the file in reverse order using tac
+Ans:  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ tac file1.txt
+	manali
+	shimla
+
+
+d) Combine multiple files using cat command
+Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat file1.txt >> file2.txt
+     priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat file2.txt
+	cdac
+	shimla
+	manali
+
+
+Q5. Create Random some files and sub directories.
+Ans priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mkdir -p test/demofile/orphan
+    cat > demo.txt
+    cat > demo2.txt
+ 
+a) display files row wise, column wise, 1 per row
+row wise 
+
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ ls -1
+demo.txt
+f1
+f2
+f3
+f4
+f5
+file.txt
+file1.txt
+file2.txt
+file3.txt
+file4.txt
+file5.txt
+test
+
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ ls | xargs -n 1
+
+b) sort the files in ascending, descending order
+Ans priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ ls -1 (acending)
+
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ ls -1 -r (descending)
+
+_________________________________________________________________________________________________________
+Q1)
+
+Create directory of your name and then create 4 files inside it named
+	a.txt, b.txt, c.txt and d.sh. And change the directory permission to
+	only user and also files permission to only user such that
+
+
+
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1mkdir priyanka 
+
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/priyanka$ touch a.txt b.txt c.txt d.sh
+
+a)user can read and write the file a.txt and b.txt
+  	 ~/priyanka$ chmod u+rw a.txt
+	~/priyanka$ ls -l
+	total 2
+	-rw------- 1 user user 0 Sep 13 07:52 a.txt
+
+
+b)user can write the file c.txt
+Ans  ~/priyanka$ chmod 200 c.txt
+     --w------- 1 user user 0 Sep 13 07:52 c.txt
+
+
+Q2. Change the permission of the previous directory to executable only.
+Ans ~$ chmod 100 priyanka
+    d--x------ 2 user user 6 Sep 13 07:52  priyanka
+
+
+Q3. Change the permission of the previous directory to read only.
+Ans : ~$ chmod 444 priyanka
+	dr--r--r-- 2 user user 6 Sep 13 07:52  priyanka
+
+
+Q2). Change the permission of the previous directory to executable only.
+	Analyze the output.
+
+ANs: 	~$ chmod 111 priyanka
+	~$ ls -l
+	 total 1
+	-rw-r--r-- 1 user user 0 Sep 13 07:51 'Welcome to CoCalc.term'
+	 d--x--x--x 2 user user 6 Sep 13 07:52  priyanka
+
+Q3) Change the permission of the previous directory to read only.
+	Analyze the output.
+	~$ chmod 444 cdac
+	~$ ls -l
+	total 2
+	-rw-r--r-- 1 user user 0 Sep 13 07:51 'Welcome to CoCalc.term'
+	 dr--r--r-- 2 user user 2 Sep 13 08:06  cdac
+
+ c)user can exectuable the file d.sh. Make
+	~/priyanka$ chmod 100 d.sh
+	---x------ 1 user user 0 Sep 13 07:52 d.sh
+
+Q4. Use echo to list the all files of your home directory.
+ANs: priyanka@DESKTOP-E3TUKR3:/home$ echo *
+     priyanka
+
+Q5. Use echo to list the all files of /etc/ directory
+Ans : echo *
+
+Q6. Use echo to list the all files of /etc/ directory with extension name .conf
+    priyanka@DESKTOP-E3TUKR3:/etc$ echo *.conf
+    adduser.conf ca-certificates.conf debconf.conf deluser.conf e2scrub.conf fuse.conf gai.conf hdparm.conf host.conf kernel-img.conf ld.so.conf libaudit.conf logrotate.conf ltrace.conf mke2fs.conf multipath.conf nsswitch.conf overlayroot.conf overlayroot.local.conf pam.conf popularity-contest.conf resolv.conf rsyslog.conf sensors3.conf sos.conf sysctl.conf ucf.conf xattr.conf
+
+
+Q7. Use echo to append your name to a.txt
+ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/priyanka$   echo "priyanka" >> a.txt
+
+Note:Many operation might not work.Analyze them 
+
+1.Create Three level nested directory a,b and c
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ mkdir -p a/b/c
+
+a)Create at least one hidden file in each directory
+  touch .hiddenfile.txt
+
+b)Create at least one normal text file in each directory
+  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ touch a/b/.file1.txt a/b/c/.file3.txt
+
+
+
+c) Copy c into a
+ans : priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ cp -r /mnt/d/os/Assign1/new/a/b/c a
+      priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new/a$ ls
+      b  c
+
+
+d)Copy file inside a to b
+Ans:  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cp -r /mnt/d/os/Assign1/new/a b
+
+2) Change the third level directory c permission to read only
+Ans : ~$ chmod 400 a/b/c  
+	~/a/b$ ls -l
+	total 1
+	dr-------- 2 user user 2 Sep 13 08:49 c
+
+3) Try copying third level c directory to outside of a
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cp -r /mnt/d/os/Assign1/new/a/b/c new
+
+4.Create the directory  “data“ inside b
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a$ mkdir -p b/data
+
+5.Change the permission of b to read and write only
+   ~$ chmod 600 a/b
+   total 1
+   drw------- 3 user user 3 Sep 13 08:49 b 
+
+
+6)Create directory “data2”  inside b
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a$ mkdir -p b/data2
+
+
+7. Create data.txt file inside b
+Ans: 
+  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ cat > data.txt b
+
+
+8.Rename the second level directory c to copied_dir
+Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a/b$ mv c cpoied_dir
+
+
+9.Change permission of copied_dir to only executable
+	~/a/b$ chmod 100 copied_dir
+	~/a/b$ ls -l
+	total 1
+	d--x------ 2 user user 2 Sep 13 08:49 copied_dir
+
+
+10 Try ls on copied_dir
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a/b/cpoied_dir$ touch file1.txt file2.txt
+
+
+11.Try moving copied_dir to outside of a
+Ans:priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$   mv /mnt/d/os/Assign1/new/a/b/copied_dir new
+
+
+13.Now change the owner of the directory a to root
+    > groups username
+      chgrp webdev file.txt
+      ls -l file.txt
+
+
+14.Change permission of a to read write and executable to only user
+   priyanka@DESKTOP-E3TUKR3:/mnt/d/os/ chmod 700 a
+
+
+15.Try creating directory sample inside a
+mkdir -p a/sample
+
+
+16.Create directory x outside a
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mkdir -p new/x
+
+
+
+17.Try moving x inside a
+priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ mv /mnt/d/os/Assign1/new/x a
+
+18.Create directory movies
+mkdir movies
+
+
+19.Change group of movies to sudo
+sudo usermod -aG sudo newuser
+
+
+20.Change group of movies to avahi
+chgrp scifi myfile
+
+21.Try changing permission after changing ownership to root
+ sudo chmod --recursive a+rwx /tmp
+
+22.Try Changing permission after changing group to sudo without sudo
+pkexec chmod go-w /usr/lib/sudo/sudoers.so
+
+23.Try Changing owner and group both to root
+sudo chown -R username:group directory
+
+24.Try changinging permission
+sudo usermod -aG sudo newuser
+
+25.Try deleting the file
+rm -rf a.txt
+
+
