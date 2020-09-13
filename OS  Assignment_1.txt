@@ -51,7 +51,49 @@ Assignmanet 1
   %::z  +hh:mm:ss numeric time zone (e.g., -04:00:00)
   %:::z  numeric time zone with : to necessary precision (e.g., -04, +05:30)
   %Z   alphabetic time zone abbreviation (e.g., EDT)
+  
+  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new/a$ man cal
+  
+  The options are as follows:
 
+     -h      Turns off highlighting of today.
+
+     -J      Display Julian Calendar, if combined with the -o option, display date of
+             Orthodox Easter according to the Julian Calendar.
+
+     -e      Display date of Easter (for western churches).
+     
+     
+     
+     
+    -n     do not output the trailing newline
+
+       -e     enable interpretation of backslash escapes
+
+       -E     disable interpretation of backslash escapes (default)
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       If -e is in effect, the following sequences are recognized:
+
+       \\     backslash
+
+       \a     alert (BEL)
+
+       \b     backspace
+
+       \c     produce no further output
+
+       \e     escape
+
+       \f     form feed
+
+       \n     new line
+ Manual page echo(1) line 10 (p
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q2
 A) Create three directory a b and c and create a.txt,b.txt and c.txt in each directory respectively and then copy c directory into the a.
 
@@ -69,6 +111,7 @@ Ans:  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/a$ alias Priyanka="ls -lh"
 D) Change Directory name a to cdac.
 Ans:priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mv a cdac
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q3. A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
     file5.txt with some text inside it. Search for 's' character
@@ -109,6 +152,8 @@ D)Remove previously created directory a , b and c.
 
 Ans : priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ rm -rf a b c
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Q4. Create a file with some content using vi editor
 Ans priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ vi demo.txt
     priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat demo.txt
@@ -141,6 +186,7 @@ Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cat file1.txt >> file2.txt
 	shimla
 	manali
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q5. Create Random some files and sub directories.
 Ans priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mkdir -p test/demofile/orphan
@@ -195,17 +241,17 @@ a)user can read and write the file a.txt and b.txt
 b)user can write the file c.txt
 Ans  ~/priyanka$ chmod 200 c.txt
      --w------- 1 user user 0 Sep 13 07:52 c.txt
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q2. Change the permission of the previous directory to executable only.
 Ans ~$ chmod 100 priyanka
     d--x------ 2 user user 6 Sep 13 07:52  priyanka
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q3. Change the permission of the previous directory to read only.
 Ans : ~$ chmod 444 priyanka
 	dr--r--r-- 2 user user 6 Sep 13 07:52  priyanka
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q2). Change the permission of the previous directory to executable only.
 	Analyze the output.
@@ -215,6 +261,7 @@ ANs: 	~$ chmod 111 priyanka
 	 total 1
 	-rw-r--r-- 1 user user 0 Sep 13 07:51 'Welcome to CoCalc.term'
 	 d--x--x--x 2 user user 6 Sep 13 07:52  priyanka
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q3) Change the permission of the previous directory to read only.
 	Analyze the output.
@@ -228,9 +275,13 @@ Q3) Change the permission of the previous directory to read only.
 	~/priyanka$ chmod 100 d.sh
 	---x------ 1 user user 0 Sep 13 07:52 d.sh
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Q4. Use echo to list the all files of your home directory.
 ANs: priyanka@DESKTOP-E3TUKR3:/home$ echo *
      priyanka
+     
+    -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Q5. Use echo to list the all files of /etc/ directory
 Ans : echo *
@@ -239,9 +290,11 @@ Q6. Use echo to list the all files of /etc/ directory with extension name .conf
     priyanka@DESKTOP-E3TUKR3:/etc$ echo *.conf
     adduser.conf ca-certificates.conf debconf.conf deluser.conf e2scrub.conf fuse.conf gai.conf hdparm.conf host.conf kernel-img.conf ld.so.conf libaudit.conf logrotate.conf ltrace.conf mke2fs.conf multipath.conf nsswitch.conf overlayroot.conf overlayroot.local.conf pam.conf popularity-contest.conf resolv.conf rsyslog.conf sensors3.conf sos.conf sysctl.conf ucf.conf xattr.conf
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q7. Use echo to append your name to a.txt
 ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/priyanka$   echo "priyanka" >> a.txt
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Note:Many operation might not work.Analyze them 
 
@@ -265,35 +318,48 @@ ans : priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ cp -r /mnt/d/os/Assign1/ne
 d)Copy file inside a to b
 Ans:  priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cp -r /mnt/d/os/Assign1/new/a b
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 2) Change the third level directory c permission to read only
 Ans : ~$ chmod 400 a/b/c  
 	~/a/b$ ls -l
 	total 1
 	dr-------- 2 user user 2 Sep 13 08:49 c
+	
+=======	-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 3) Try copying third level c directory to outside of a
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ cp -r /mnt/d/os/Assign1/new/a/b/c new
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 4.Create the directory  “data“ inside b
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a$ mkdir -p b/data
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 5.Change the permission of b to read and write only
    ~$ chmod 600 a/b
    total 1
    drw------- 3 user user 3 Sep 13 08:49 b 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 6)Create directory “data2”  inside b
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a$ mkdir -p b/data2
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 7. Create data.txt file inside b
 Ans: 
   priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ cat > data.txt b
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 8.Rename the second level directory c to copied_dir
 Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a/b$ mv c cpoied_dir
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 9.Change permission of copied_dir to only executable
@@ -302,13 +368,17 @@ Ans: priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a/b$ mv c cpoied_dir
 	total 1
 	d--x------ 2 user user 2 Sep 13 08:49 copied_dir
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 10 Try ls on copied_dir
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/a/b/cpoied_dir$ touch file1.txt file2.txt
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 11.Try moving copied_dir to outside of a
 Ans:priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$   mv /mnt/d/os/Assign1/new/a/b/copied_dir new
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 13.Now change the owner of the directory a to root
@@ -316,27 +386,32 @@ Ans:priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$   mv /mnt/d/os/Assign1/new/a/b/c
       chgrp webdev file.txt
       ls -l file.txt
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 14.Change permission of a to read write and executable to only user
    priyanka@DESKTOP-E3TUKR3:/mnt/d/os/ chmod 700 a
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 15.Try creating directory sample inside a
 mkdir -p a/sample
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 16.Create directory x outside a
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1$ mkdir -p new/x
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 17.Try moving x inside a
 priyanka@DESKTOP-E3TUKR3:/mnt/d/os/Assign1/new$ mv /mnt/d/os/Assign1/new/x a
 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 18.Create directory movies
 mkdir movies
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 19.Change group of movies to sudo
 sudo usermod -aG sudo newuser
 
