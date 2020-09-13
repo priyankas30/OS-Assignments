@@ -28,10 +28,10 @@ do
         2) str2=$str1
         echo $str2
           ;;
-        3)str2="Mahajan"
+        3)str2="India"
                 echo $str1$str2
                 ;;
-        4) str2="Meghana"
+        4) str2="Mumbai"
         if [ $str1 == $str2 ]
         then
           echo "Equal"
