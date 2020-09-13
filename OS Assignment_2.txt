@@ -44,7 +44,13 @@ do
 
 3.Write a shell script to rename all files in the current directory with numeric continuous value(Warning: Do this in a personal folder. Don't use Home directory) 
 
-
+ for((i=1;i<10;i++))
+   do
+           mv a$i abbbb$i
+   done
+   
+   
+   
 #4. Write a script that print environment variable(Print $HOME,$PATH,$SHELL,$HISTORY,$LOGNAME,$TERM)
 #!/bin/bash
 
